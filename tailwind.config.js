@@ -6,10 +6,21 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1300px",
+      },
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#3D00B7",
+        // secondary: '#525f81',
+        // primaryHover: '#971b1f',
+        // bgPrimary: '#e01f26', //dff2f0
+        textPrimary: "#565656",
+        borderText: "#000000",
       },
     },
   },
