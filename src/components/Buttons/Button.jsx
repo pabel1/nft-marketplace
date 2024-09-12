@@ -1,8 +1,7 @@
 import classnames from "classnames";
 
 const buttonClassesMap = {
-  common:
-    "inline-flex relative py-2 px-4 border shadow-sm text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2",
+  common: "bg-primary text-white py-2 rounded-full px-6 text-base  ",
   primary:
     "bg-primary text-white py-2 rounded-full px-6 text-base hover:bg-transparent  border-2 border-primary hover:text-primary ",
 
