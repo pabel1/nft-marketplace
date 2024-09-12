@@ -23,7 +23,7 @@ export default function Button({
       disabled={loading || props.disabled}
       className={classnames(
         buttonClassesMap[kind],
-        buttonClassesMap.common,
+        // buttonClassesMap.common,
         className
       )}
       {...props}
