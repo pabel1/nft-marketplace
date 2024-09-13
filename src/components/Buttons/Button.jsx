@@ -7,6 +7,9 @@ const buttonClassesMap = {
 
   secondary:
     "text-primary py-2 rounded-full px-6 text-base hover:bg-primary bg-transparent  border-2 border-primary hover:text-white",
+
+  badge:
+    "text-primary py-2 rounded-full px-6 text-base hover:bg-primary bg-[#F2F2F4]   hover:text-white shadow-sm ",
 };
 
 export default function Button({
