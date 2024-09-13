@@ -1,13 +1,21 @@
+import { countUpData } from "@/assets/data/countUpData";
 import banner1 from "@/assets/images/banner/banner1.png";
 import banner2 from "@/assets/images/banner/banner2.png";
 import banner3 from "@/assets/images/banner/banner3.png";
 import Image from "next/image";
 import ContentBanner from "./ContentBanner";
 const Banner = () => {
+  const data = {
+    title: "Discover, and collect Digital Art NFTs",
+    description:
+      " Digital marketplace for crypto collectibles and non-fungible tokens(NFTs). Buy, Sell, and discover exclusive digital assets.",
+    buttonText: "Explore Now",
+    countUpData: countUpData,
+  };
   return (
     <section className="container flex items-center justify-between gap-4 my-10">
       <div className=" basis-1/2">
-        <ContentBanner />
+        <ContentBanner data={data} />
       </div>
       <div className="  ">
         <div className=" relative ">
