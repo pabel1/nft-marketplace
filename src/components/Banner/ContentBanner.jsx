@@ -22,7 +22,7 @@ const ContentBanner = ({ data }) => {
             <Image className=" " src={dotImg} />
           </span>
           <span className=" z-50">
-            <Button className={"px-8 py-2 z-50"}>{buttonText}</Button>
+            <Button className={"px-8 py-4 z-50"}>{buttonText}</Button>
             <div className=" flex items-center justify-between gap-4 my-4">
               {countUpData &&
                 countUpData.map(({ title, description, id }) => (
