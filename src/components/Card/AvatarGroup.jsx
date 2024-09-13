@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const AvatarGroup = ({ avatars, maxAvatars = 5, size = 40 }) => {
+const AvatarGroup = ({ avatars, maxAvatars = 5, size = 75 }) => {
   const displayAvatars = avatars.slice(0, maxAvatars);
   const remainingAvatars = avatars.length - maxAvatars;
 

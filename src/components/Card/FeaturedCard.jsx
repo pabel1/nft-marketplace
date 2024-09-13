@@ -1,18 +1,33 @@
-import img from "@/assets/images/cardImage/active.png";
 import user from "@/assets/images/Ellipse-95.png";
 import Image from "next/image";
 import Button from "../Buttons/Button";
-const FeaturedCard = () => {
+const FeaturedCard = ({ item }) => {
+  const { featureImg, img1, img2, img3 } = item || {};
+
   return (
     <section className=" my-8 space-y-4 ">
-      <div className="grid grid-cols-4  gap-2">
+      <div className="grid grid-cols-4  gap-2 p-1">
         <div className="w-full  col-span-3">
-          <Image src={img} alt="" />
+          <Image className=" " src={featureImg} alt="" />
         </div>
-        <div className=" col-span-1 space-y-2">
-          <Image src={img} alt="" />
-          <Image src={img} alt="" />
-          <Image src={img} alt="" />
+        <div className="col-span-1 flex flex-col  gap-2 ">
+          <Image
+            src={img1}
+            alt=""
+            className="w-full flex-grow object-cover  rounded-xl "
+          />
+
+          <Image
+            src={img2}
+            alt=""
+            className="w-full flex-grow  object-cover rounded-xl"
+          />
+
+          <Image
+            src={img3}
+            alt=""
+            className="w-full flex-grow  object-cover  rounded-xl"
+          />
         </div>
       </div>
 

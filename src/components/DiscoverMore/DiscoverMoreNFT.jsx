@@ -1,3 +1,4 @@
+import { card, nftCategories } from "@/assets/data/nftCardData";
 import { MdOutlineFilterList } from "react-icons/md";
 import Button from "../Buttons/Button";
 import NFTCard from "../Card/NFTCard";
@@ -10,11 +11,18 @@ const DiscoverMoreNFT = () => {
         </h1>
         <div className=" my-8 flex items-center justify-between gap-8">
           <div className=" flex items-center justify-start gap-4 ">
-            <Button kind="badge">All Categories</Button>
-            <Button kind="badge">All Categories</Button>
-            <Button kind="badge">All Categories</Button>
-            <Button kind="badge">All Categories</Button>
-            <Button kind="badge">All Categories</Button>
+            {nftCategories &&
+              nftCategories.map(({ title, id }) => (
+                <Button
+                  className={``}
+                  kind="badge"
+                  groupId="nftGroup"
+                  isActive={id === 7}
+                  key={id}
+                >
+                  {title}
+                </Button>
+              ))}
           </div>
           <div>
             <Button kind="badge">
@@ -26,12 +34,8 @@ const DiscoverMoreNFT = () => {
             </Button>
           </div>
         </div>
-        <div className=" grid grid-cols-4 gap-4  ">
-          {Array(16)
-            .fill()
-            .map((i) => (
-              <NFTCard key={i} />
-            ))}
+        <div className=" grid grid-cols-4 gap-4 gap-x-8  ">
+          {card && card.map((item, i) => <NFTCard item={item} key={i} />)}
         </div>
 
         <div className=" pt-14 pb-10 flex items-center justify-center">

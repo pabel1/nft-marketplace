@@ -1,8 +1,17 @@
+import img2 from "@/assets/images/cardImage/22.png";
+import img3 from "@/assets/images/cardImage/23.png";
+import img from "@/assets/images/cardImage/active.png";
+import img1 from "@/assets/images/cardImage/banner2.png";
 import ActiveCard from "../Card/ActiveCard";
 import FlexCard from "../Card/FlexCard";
 import UserCard from "../Card/UserCard";
-
+// import user from "@/assets/images/Ellipse-95.png";
 const CollectionOver = () => {
+  const galleryData = [
+    { featureImg: img, img1: img1, img2: img2, img3: img3 },
+    { featureImg: img, img1: img1, img2: img2, img3: img3 },
+    { featureImg: img, img1: img1, img2: img2, img3: img3 },
+  ];
   return (
     <div className=" container grid grid-cols-3 items-center justify-center gap-4 py-10">
       <div>
