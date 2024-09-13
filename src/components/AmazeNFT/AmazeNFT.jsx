@@ -3,9 +3,9 @@ import cart from "@/assets/images/icon/chart-square2.png";
 import Image from "next/image";
 const AmazeNFT = () => {
   return (
-    <div className="bg-[#F7F9FB] py-10 ">
-      <div className="container grid grid-cols-3 items-start gap-4 py-10">
-        <h1 className="w-[90%] text-2xl font-extrabold uppercase">
+    <div className="bg-[#F7F9FB] py-10 md:py-14 ">
+      <div className="container grid grid-cols-3 items-start justify-between gap-4 py-10">
+        <h1 className="w-full text-3xl font-extrabold uppercase">
           The amazing NFT art of the world here
         </h1>
         <div className="flex items-start gap-2 ">

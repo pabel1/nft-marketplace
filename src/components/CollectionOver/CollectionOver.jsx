@@ -17,15 +17,17 @@ const CollectionOver = () => {
       </div>
 
       <div className=" border-l px-6 ">
-        <h1 className=" text-xl font-semibold">Top Collections over </h1>
+        <h1 className=" text-xl font-extrabold uppercase">
+          Top Collections over{" "}
+        </h1>
         <p className=" text-primary font-bold text-sm ">Last 7 days</p>
-        <div className=" space-y-5 py-2">
+        <div className=" space-y-5 py-2 ">
           {Array(5)
             .fill()
             .map((item, i) => (
-              <>
-                <UserCard key={i} index={i + 1} />
-              </>
+              <div className={`${i < 4 ? "border-b" : ""}`} key={i}>
+                <UserCard index={i + 1} />
+              </div>
             ))}
         </div>
       </div>

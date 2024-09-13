@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaEthereum } from "react-icons/fa";
 const UserCard = ({ index }) => {
   return (
-    <div className=" flex items-center justify-between gap-4 pb-2 border-b w-fit">
+    <div className=" flex items-center justify-between gap-4 pb-2">
       <h1 className=" font-semibold text-xl">{index}</h1>
       <Image src={user} alt="" />
       <div>
@@ -13,7 +13,7 @@ const UserCard = ({ index }) => {
           <p>0.25 ETH</p>
         </span>
       </div>
-      <p className=" text-[#14C8B0] font-medium">+26.52%</p>
+      <p className="text-xl text-[#14C8B0] font-bold">+26.52%</p>
     </div>
   );
 };

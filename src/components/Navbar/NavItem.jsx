@@ -6,7 +6,7 @@ const NavItem = ({ items }) => {
       {items &&
         items.map(({ title, link, id }) => (
           <Link
-            className=" hover:text-primary px-4 py-1 font-medium  "
+            className=" hover:text-primary px-4 py-1 font-semibold text-textPrimary "
             href={link}
             key={id}
           >

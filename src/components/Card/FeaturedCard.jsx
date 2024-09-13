@@ -26,7 +26,9 @@ const FeaturedCard = () => {
           </div>
         </div>
         <div className=" flex items-center justify-center gap-2">
-          <Button kind="secondary">Total 54 Items</Button>
+          <Button className={"py-1 text-sm font-bold"} kind="secondary">
+            Total 54 Items
+          </Button>
         </div>
       </div>
     </section>

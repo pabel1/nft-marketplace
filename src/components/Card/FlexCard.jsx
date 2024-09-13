@@ -11,7 +11,7 @@ const FlexCard = () => {
         <h3 className=" text-xl font-semibold">The Futr Abstr</h3>
         <div className=" flex items-center gap-2 space-y-2">
           <Image src={user} alt="" />
-          <div className="flex items-center gap-4 px-2 py-1 border-2 border-[#00AC4F] rounded-md text-[#00AC4F]">
+          <div className="flex items-center gap-2 px-1 py-1 border-2 border-[#00AC4F] rounded-md text-[#00AC4F] text-sm font-semibold">
             <FaEthereum />
             <p>0.25 ETH</p>
           </div>
