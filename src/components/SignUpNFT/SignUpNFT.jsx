@@ -21,12 +21,12 @@ const SignUpNFT = () => {
           <div className="">
             <SignUpNFTCard data={{ img: img1, user: user1 }} />
           </div>
-          <div className="w-1/2">
+          <div className="w-[44%]">
             <SignUpNFTCard data={{ img: img2, user: user2 }} />
           </div>
         </div>
 
-        <div className="w-1/4 ">
+        <div className="md:[40%] lg:w-[30%] ">
           <SignUpNFTCard data={{ img: img3, user: user2 }} />
         </div>
       </div>

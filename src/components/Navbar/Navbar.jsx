@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white py-2 shadow">
+    <nav className="bg-white py-2 shadow ">
       <div className="hidden container py-3 md:flex items-center justify-between">
         <Logo />
         <NavItem items={navItem} />
