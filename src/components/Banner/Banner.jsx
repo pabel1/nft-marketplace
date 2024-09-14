@@ -21,14 +21,14 @@ const Banner = () => {
         <ContentBanner data={data} />
       </div>
 
-      <div className=" relative flex items-center justify-center px-10 md:px-1 ">
+      <div className=" relative flex items-center justify-center  md:px-1 ">
         <div className=" absolute -right-12 ">
           <Image src={banner3} alt="logo" />
         </div>
         <div className="  absolute -right-6">
           <Image src={banner2} alt="logo" />
         </div>
-        <div className=" opacity-100 z-20 ">
+        <div className="h-full w-full opacity-100 z-20 ">
           <Image src={banner1} alt="logo" />
         </div>
         <div className="z-30 absolute -left-16 bottom-28 ">
