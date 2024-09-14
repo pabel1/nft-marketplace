@@ -17,11 +17,11 @@ const Footer = () => {
           </p>
           <SocialMedia />
         </div>
-        <div className="col-span-1 md:col-span-2 space-y-4">
+        <div className="col-span-1 md:col-span-1 space-y-4">
           <h1 className=" text-xl font-semibold ">Market Place </h1>
           {footerLink && <Ullist data={footerLink} />}
         </div>
-        <div className="col-span-1 md:col-span-2 space-y-4">
+        <div className="col-span-1 md:col-span-1 space-y-4">
           <h1 className=" text-xl font-semibold ">My Account </h1>
           {myAccountLink && <Ullist data={myAccountLink} />}
         </div>

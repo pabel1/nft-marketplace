@@ -16,7 +16,7 @@ const Banner = () => {
     countUpData: countUpData,
   };
   return (
-    <section className="container flex flex-wrap-reverse md:flex-row items-center justify-between gap-6 md:gap-4 my-10">
+    <section className=" container flex flex-wrap-reverse md:flex-row items-center justify-between gap-6 md:gap-4 my-10">
       <div className=" basis-1/2">
         <ContentBanner data={data} />
       </div>
@@ -28,14 +28,14 @@ const Banner = () => {
         <div className="  absolute -right-6">
           <Image src={banner2} alt="logo" />
         </div>
-        <div className=" opacity-100 z-30 ">
+        <div className=" opacity-100 z-20 ">
           <Image src={banner1} alt="logo" />
         </div>
-        <div className="z-40 absolute -left-16 bottom-28 ">
+        <div className="z-30 absolute -left-16 bottom-28 ">
           <Image src={banner4} alt="logo" className="  " />
         </div>
 
-        <div className=" absolute  inset-0 z-50 p-6 ">
+        <div className=" absolute  inset-0 z-40 p-6 ">
           <div className="h-full flex flex-col justify-between  ">
             <div>
               <h1 className=" text-2xl font-bold text-white  ">

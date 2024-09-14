@@ -7,12 +7,12 @@ import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white py-2 shadow ">
+    <nav className="bg-white py-2 shadow">
       <div className="hidden container py-3 md:flex items-center justify-between">
         <Logo />
         <NavItem items={navItem} />
         <SearchBar />
-        <div className=" flex items-center gap-4">
+        <div className="flex items-center gap-4">
           <Button>Upload</Button>
           <Button kind={"secondary"}>Connect Wallet</Button>
         </div>
