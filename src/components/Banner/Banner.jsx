@@ -42,7 +42,7 @@ const Banner = () => {
                 Abstr Gradient NFT
               </h1>
               <div className="my-2 flex items-center gap-2 text-white">
-                <Image src={user} />
+                <Image src={user} alt="user" />
                 <p>Arkhan17</p>
               </div>
             </div>

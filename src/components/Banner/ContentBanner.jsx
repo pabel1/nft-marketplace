@@ -19,7 +19,7 @@ const ContentBanner = ({ data }) => {
         </p>
         <div className=" relative ">
           <span className=" absolute -left-10 -bottom-5 -z-30 ">
-            <Image className=" " src={dotImg} />
+            <Image className=" " src={dotImg} alt="dotbg" />
           </span>
           <span className=" z-50">
             <Button className={"px-8 py-4 z-50"}>{buttonText}</Button>

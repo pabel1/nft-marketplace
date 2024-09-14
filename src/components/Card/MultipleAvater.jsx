@@ -9,6 +9,7 @@ const MultipleAvater = ({ avaters }) => {
             className=" rounded-full ring-2 ring-white "
             src={user}
             alt=" "
+            key={i}
           />
         ))}
     </div>
