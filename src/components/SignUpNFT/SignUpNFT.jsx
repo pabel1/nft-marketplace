@@ -18,15 +18,15 @@ const SignUpNFT = () => {
     <section className=" container my-8 grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center">
       <div className="  flex items-center justify-center gap-10 py-10 ">
         <div className=" flex flex-col items-end gap-12">
-          <div className="">
+          <div className="w-full">
             <SignUpNFTCard data={{ img: img1, user: user1 }} />
           </div>
-          <div className="w-[44%]">
+          <div className="w-1/2">
             <SignUpNFTCard data={{ img: img2, user: user2 }} />
           </div>
         </div>
 
-        <div className="md:[40%] lg:w-[30%] ">
+        <div className=" ">
           <SignUpNFTCard data={{ img: img3, user: user2 }} />
         </div>
       </div>
