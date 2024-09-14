@@ -16,12 +16,12 @@ const Banner = () => {
     countUpData: countUpData,
   };
   return (
-    <section className="container flex items-center justify-between gap-4 my-10">
+    <section className="container flex flex-wrap-reverse md:flex-row items-center justify-between gap-6 md:gap-4 my-10">
       <div className=" basis-1/2">
         <ContentBanner data={data} />
       </div>
 
-      <div className=" relative flex items-center justify-center ">
+      <div className=" relative flex items-center justify-center px-10 md:px-1 ">
         <div className=" absolute -right-12 ">
           <Image src={banner3} alt="logo" />
         </div>

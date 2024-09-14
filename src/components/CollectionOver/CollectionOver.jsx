@@ -13,8 +13,8 @@ const CollectionOver = () => {
     { featureImg: img, img1: img1, img2: img2, img3: img3 },
   ];
   return (
-    <div className=" container grid grid-cols-3 items-center justify-center gap-4 py-10">
-      <div>
+    <div className=" container grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-4 py-10">
+      <div className=" flex">
         <ActiveCard />
       </div>
       <div className=" space-y-5">

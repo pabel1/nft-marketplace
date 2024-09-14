@@ -7,8 +7,8 @@ import Ullist from "../Shared/Ullist";
 const Footer = () => {
   return (
     <section className=" py-10">
-      <div className="container  grid grid-cols-6 items-start justify-start gap-4">
-        <div className="col-span-2 space-y-4">
+      <div className="container  grid grid-cols-2 md:grid-cols-6 items-start justify-start gap-4">
+        <div className="col-span-1 md:col-span-2 space-y-4">
           <Logo />
           <p className=" text-textPrimary">
             The world’s first and largest digital marketplace for crypto
@@ -17,21 +17,21 @@ const Footer = () => {
           </p>
           <SocialMedia />
         </div>
-        <div className="col-span-1 space-y-4">
+        <div className="col-span-1 md:col-span-2 space-y-4">
           <h1 className=" text-xl font-semibold ">Market Place </h1>
           {footerLink && <Ullist data={footerLink} />}
         </div>
-        <div className="col-span-1 space-y-4">
+        <div className="col-span-1 md:col-span-2 space-y-4">
           <h1 className=" text-xl font-semibold ">My Account </h1>
           {myAccountLink && <Ullist data={myAccountLink} />}
         </div>
-        <div className=" col-span-2 space-y-4 ">
+        <div className=" col-span-1 md:col-span-2 space-y-4 ">
           <h1 className=" text-xl font-semibold ">Stay in the loop </h1>
           <p className=" text-textPrimary">
             Join our mailing list to stay in the loop with our newest feature
             releases, NFT drops, and tips and tricks for navigating NFTs.
           </p>
-          <div className="w-full  flex items-center justify-between gap-1 shadow border rounded-full py-2 px-2 ">
+          <div className="hidden w-full  md:flex items-center justify-between gap-1 shadow border rounded-full py-2 px-2 ">
             <input
               type="text"
               placeholder="Enter your email address.."

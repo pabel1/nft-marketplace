@@ -9,8 +9,8 @@ const DiscoverMoreNFT = () => {
         <h1 className=" text-3xl font-extrabold uppercase">
           Discover more NFTs
         </h1>
-        <div className=" my-8 flex items-center justify-between gap-8">
-          <div className=" flex items-center justify-start gap-4 ">
+        <div className=" my-8 flex flex-wrap  items-center justify-between gap-8">
+          <div className=" flex flex-wrap  items-center  justify-start gap-4 ">
             {nftCategories &&
               nftCategories.map(({ title, id }) => (
                 <Button
@@ -34,7 +34,7 @@ const DiscoverMoreNFT = () => {
             </Button>
           </div>
         </div>
-        <div className=" grid grid-cols-4 gap-4 gap-x-8  ">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-4 gap-x-8  ">
           {card && card.map((item, i) => <NFTCard item={item} key={i} />)}
         </div>
 

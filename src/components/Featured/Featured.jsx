@@ -17,7 +17,7 @@ const Featured = () => {
         <h1 className=" text-2xl font-extrabold uppercase">
           Collection Featured NFTs
         </h1>
-        <div className=" py-4 grid grid-cols-3  gap-6 ">
+        <div className="py-1 md:py-4 grid grid-cols-1  md:grid-cols-3 gap-2  md:gap-6 ">
           {galleryData.map((item, i) => (
             <FeaturedCard item={item} key={i} />
           ))}

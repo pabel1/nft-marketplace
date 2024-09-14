@@ -5,7 +5,7 @@ const FeaturedCard = ({ item }) => {
   const { featureImg, img1, img2, img3 } = item || {};
 
   return (
-    <section className=" my-8 space-y-4 ">
+    <section className=" my-8 space-y-4 py-2 ">
       <div className="grid grid-cols-4  gap-2 p-1">
         <div className="w-full  col-span-3">
           <Image className=" " src={featureImg} alt="" />

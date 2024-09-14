@@ -5,8 +5,8 @@ import CountUp from "../CountUp/CountUp";
 const ContentBanner = ({ data }) => {
   const { title, description, buttonText, countUpData } = data || {};
   return (
-    <div className=" w-full space-y-5">
-      <h1 className=" text-4xl font-extrabold text-borderText uppercase  ">
+    <div className=" my-8 md:my-0 w-full space-y-5">
+      <h1 className=" text-xl md:text-4xl font-extrabold text-borderText uppercase  ">
         {title}
       </h1>
       <div

@@ -6,7 +6,7 @@ const CountUp = ({ title, description }) => {
   const suffix = match ? match[2] || "" : "";
   return (
     <div>
-      <h3 className="font-extrabold text-borderText text-4xl">
+      <h3 className="font-extrabold text-borderText text-2xl md:text-4xl">
         <ReactCountUp end={number} duration={3} />
         <span className=" font-semibold">{suffix}</span>
       </h3>
